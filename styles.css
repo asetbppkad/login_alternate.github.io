@@ -1,0 +1,75 @@
+body {
+    background-color: #dfe6eb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    font-weight: bold;
+    display: grid;
+    text-decoration: none;
+    border-radius: 20px;
+    background: #dfe6eb;
+    box-shadow: 5px 5px 4px #c2c8cc,
+        -5px -5px 4px #fcffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    width: max-content;
+    color: #024a45;
+}
+
+li a:hover {
+    font-weight: bold;
+    color: #024a45;
+    box-shadow: inset 5px 5px 4px #c2c8cc,
+        inset -5px -5px 4px #fcffff;
+}
+
+.active {
+    color: #540264;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: inherit;
+    /* Menghilangkan perubahan warna saat hover, focus, atau active */
+    text-decoration: none;
+    /* Menghilangkan garis bawah saat hover, focus, atau active */
+    background: none;
+    /* Menghilangkan background */
+    border: none;
+    /* Menghilangkan border */
+}
+
+.img {
+    height: fit-content;
+}
+
+input::placeholder {
+    font-size: 0.8rem;
+}
+
+input {
+    caret-color: #540264;
+}
+
+#loginStatus {
+    color: #9c020f;
+    margin: 10px;
+    text-align: center;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #bbbaba;
+    padding: 10px;
+    text-align: center;
+    height: 50px;
+    /* Sesuaikan sesuai kebutuhan */
+}

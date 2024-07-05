@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+
+    <link rel="stylesheet" href="assets/css/main/app.css" />
+    <!-- <link
+      rel="shortcut icon"
+      href="assets/images/logo/favicon.svg"
+      type="image/x-icon"
+    /> -->
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/6762/6762700.png"
+      type="image/png"
+    />
+
+    <link rel="stylesheet" href="assets/css/shared/iconly.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const data_store = JSON.parse(localStorage.getItem("loggedIn"));
+        // if (data_store.username !== "") {
+        //   window.location.href = "dashboard.html";
+        // }
+        if (localStorage.getItem("status") === "true") {
+          window.location.href = "dashboard.html";
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div id="main" class="layout-horizontal">
+        <div class="content-wrapper container">
+          <div class="page-content">
+            <section class="row" style="justify-content: center; padding: 80px">
+              <h3 class="text-center">Website Aset Alternatif</h3>
+              <p class="text-center">
+                Website ini digunakan sementara selama PDN error
+              </p>
+              <div class="col-md-6 col-12">
+                <div
+                  class="card"
+                  style="
+                    border-radius: 20px;
+                    background: #f2f7ff;
+                    box-shadow: -5px -5px 14px #e6ebf2, 5px 5px 14px #feffff;
+                  "
+                >
+                  <div class="card-header">
+                    <h2 class="card-title">
+                      <img
+                        src="assets/images/logo/Sampang.png"
+                        alt=""
+                        width="5%"
+                      />
+                      Log in
+                    </h2>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-body">
+                      <style>
+                        .input-baru {
+                          border-radius: 10px;
+                          background: #f2f7ff;
+                          box-shadow: inset 5px 5px 7px #e6ebf2,
+                            inset -5px -5px 7px #feffff;
+                        }
+                      </style>
+                      <form id="loginForm" class="form form-horizontal">
+                        <div class="form-body">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label for="username">Username</label>
+                            </div>
+                            <div class="col-md-8 form-group">
+                              <input
+                                type="text"
+                                id="username"
+                                name="username"
+                                required
+                                class="form-control input-baru"
+                                placeholder="Masukkan Username"
+                                autocomplete="off"
+                              />
+                            </div>
+                            <div class="col-md-4">
+                              <label for="password">Password</label>
+                            </div>
+                            <div class="col-md-8 form-group">
+                              <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                required
+                                class="form-control input-baru"
+                                placeholder="Masukkan Password"
+                              />
+                            </div>
+                            <div class="col-sm-12 d-flex justify-content-end">
+                              <button
+                                id="submit_form"
+                                type="button"
+                                onclick="cekLog()"
+                                class="btn btn-primary me-1 mb-1"
+                              >
+                                Sign in
+                              </button>
+                              <button
+                                type="reset"
+                                class="btn btn-light-secondary me-1 mb-1"
+                              >
+                                Reset
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                      <p id="loginStatus"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <footer class="fixed-bottom">
+          <div class="container">
+            <div class="footer clearfix mb-0 text-muted">
+              <div class="float-start">
+                <p><span id="tahun_footer"></span> &copy; Ismail Aset</p>
+                <script>
+                  document.getElementById("tahun_footer").textContent =
+                    new Date().getFullYear();
+                </script>
+              </div>
+              <div class="float-end">
+                <p>
+                  Crafted with
+                  <span class="text-danger"><i class="bi bi-heart"></i></span>
+                  by
+                  <a href="https://wa.me/81913333320" target="_blank"
+                    >Ismail Aset</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/pages/horizontal-layout.js"></script>
+
+    <script src="assets/extensions/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/js/pages/dashboard.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
