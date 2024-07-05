@@ -565,3 +565,7 @@ function logout(event) {
     window.location.href = "index.html";
   }
 }
+
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault(); // Mencegah aksi default saat klik kanan
+        });
