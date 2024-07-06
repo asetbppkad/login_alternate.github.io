@@ -564,8 +564,12 @@ function logout(event) {
     localStorage.clear();
     window.location.href = "index.html";
   }
-}
+};
 
+//Daftar Konsolidator
+
+
+        // Agar tidak bisa diklik kanan
         document.addEventListener('contextmenu', function(e) {
             e.preventDefault(); // Mencegah aksi default saat klik kanan
         });
