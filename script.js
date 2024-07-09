@@ -251,7 +251,7 @@ function cekLog() {
     {
       name: "DINAS PERIKANAN",
       username: "diskan",
-      password: "disperikanhebat",
+      password: "diskanhebat",
       id_role: "2",
       is_active: "1",
       akronim: "DISKAN",
@@ -263,7 +263,7 @@ function cekLog() {
     {
       name: "DINAS LINGKUNGAN HIDUP, PERUMAHAN RAKYAT DAN PERMUKIMAN",
       username: "dlhperkim",
-      password: "dlhhebat",
+      password: "dlhperkimhebat",
       id_role: "2",
       is_active: "1",
       akronim: "DLH PERKIM",
